@@ -38,9 +38,13 @@
                             <p class="card-text text-start text-muted card-description">
                                 @Html.DisplayFor(modelItem => item.Description)
                             </p>
-                            <div>
-                                <a href="#" class="btn btnCard"><i class=""></i> Carrito</a>
-                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btnCard">Detalles</a>
+                            <div class="d-flex m-auto align-items-center justify-content-center">
+                                <div class="social-icon">
+                                    <a href="#"><img src="~/images/icons/cart.svg" alt="" /></a>
+                                     </div>
+
+
+                                <a type="button" class="btn-border draw-border" asp-action="Details" asp-route-id="@item.Id"><span>Detalles</span></a>
                             </div>
                         </div>
                     </div>
